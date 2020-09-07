@@ -22,6 +22,12 @@ class UserSchema extends Schema {
         .string('password', 60)
         .notNullable()
       table
+        .string('city', 60)
+        .nullable()
+      table
+        .string('neighborhood', 60)
+        .nullable()
+      table
         .string('avatar', 254)
       table
         .timestamps()
