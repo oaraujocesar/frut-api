@@ -12,10 +12,6 @@ class UserSchema extends Schema {
         .primary()
         .defaultTo(this.db.raw('uuid_generate_v4()'))
       table
-        .string('username', 80)
-        .notNullable()
-        .unique()
-      table
         .string('name', 80)
         .notNullable()
       table
