@@ -17,6 +17,10 @@ class User extends Model {
     })
   }
 
+  products () {
+    return this.hasMany('App/Models/Product')
+  }
+
   ratings () {
     return this.hasMany('App/Models/Rating')
   }

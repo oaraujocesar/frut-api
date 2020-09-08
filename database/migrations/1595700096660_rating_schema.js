@@ -12,7 +12,8 @@ class RatingSchema extends Schema {
       table
         .integer('rating')
       table.uuid('user_id')
-        .references('users.id')
+        .references('id')
+        .inTable('users')
       table
         .timestamps()
     })
