@@ -8,4 +8,5 @@ Route.group(() => {
 
 Route.group(() => {
   Route.post('add', 'ProductController.store')
+  Route.get('list', 'ProductController.index')
 }).prefix('v1/client/products').middleware('auth')

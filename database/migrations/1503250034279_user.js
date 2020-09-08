@@ -23,10 +23,10 @@ class UserSchema extends Schema {
         .notNullable()
       table
         .string('city', 60)
-        .nullable()
+        .notNullable()
       table
         .string('neighborhood', 60)
-        .nullable()
+        .notNullable()
       table
         .string('avatar', 254)
       table

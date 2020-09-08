@@ -19,6 +19,10 @@ class ProductSchema extends Schema {
       table
         .boolean('sell')
       table
+        .string('city')
+      table
+        .string('neighborhood')
+      table
         .string('thumbnail')
       table
         .float('price')
